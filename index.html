@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jen HUANG 🇹🇼</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --primary: #90caf9;
+      --secondary: #b0bec5;
+      --accent: #03dac6;
+      --card-bg: #1e1e1e;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header, main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    .card p {
+      color: var(--secondary);
+    }
+
+    .important {
+      border-left: 4px solid var(--primary);
+      padding-left: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N0FMTFP0J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8N0FMTFP0J');
+  </script>
+  
+</head>
+<body>
+  <header>
+    <h1>👋 歡迎來到 Jen HUANG 的專案頁面</h1>
+    <p>這裡是我在 GitHub 上的一些公開作品與專案。</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="blog-section">
+      <h2 id="blog-section">📚 我的部落格</h2>
+      <article class="card important">
+        <a href="/blog"><strong>/blog</strong></a>
+        <p>隨筆、評論。</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="tools-section">
+      <h2 id="tools-section">🛠️ 一般工具</h2>
+      <article class="card">
+        <a href="https://github.com/jenhuang-tw/taiwan-law-journal-csl"><strong>taiwan-law-journal-csl</strong></a>
+        <p>臺灣各法學期刊引註格式的 CSL 檔案</p>
+      </article>
+
+      <article class="card">
+        <a href="https://github.com/jenhuang-tw/taiwan-law-journal-csl"><strong>py-pdf</strong></a>
+        <p>Python 處理 PDF</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="ntpusu-section">
+      <h2 id="ntpusu-section">🧪 臺北大學學生會</h2>
+      <article class="card">
+        <a href="https://github.com/jenhuang-tw/su-regulation"><strong>法規系統 v2.1</strong></a>
+        <p>輔助會網法規查詢功能</p>
+      </article>
+
+      <article class="card">
+        <a href="https://github.com/jenhuang-tw/ntpusu-congsys"><strong>三峽校區議事服務</strong></a>
+        <p>使用 Nuxt 3 製作，支援議案查詢功能</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Jen HUANG
+  </footer>
+</body>
+</html>
